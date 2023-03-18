@@ -1,0 +1,108 @@
+.card{
+    width: 90vmin;
+    height: 90vmin;
+    box-shadow: 0 0 3vmin 1vmin rgba(0,0,0,0.5);
+    margin: auto;
+    margin-top: 5vmin;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.squaresContainer{
+    position: relative;
+    width: 90vmin;
+    height: 90vmin;
+    background-color: transparent;
+    animation: animation5 5s infinite;
+}
+
+.square1{
+    position: absolute;
+    width: 39vmin;
+    height: 39vmin;
+    top: 4vmin;
+    left: 4vmin;
+    background-color: rgb(243,82,32);
+    animation: animation1 5s infinite;
+}
+
+.square2{
+    position: absolute;
+    width: 39vmin;
+    height: 39vmin;
+    top: 4vmin;
+    right: 4vmin;
+    background-color: rgb(130,189,0);
+    animation: animation2 5s infinite;
+}
+
+.square3{
+    position: absolute;
+    width: 39vmin;
+    height: 39vmin;
+    bottom: 4vmin;
+    left: 4vmin;
+    background-color: rgb(0,168,241);
+    animation: animation3 5s infinite;
+}
+
+.square4{
+    position: absolute;
+    width: 39vmin;
+    height: 39vmin;
+    bottom: 4vmin;
+    right: 4vmin;
+    background-color: rgb(255,187,0);
+    animation: animation4 5s infinite;
+}
+
+@keyframes animation1 {
+    0%{border-radius: 0;}
+    10%{border-top-left-radius: 50%;border-top-right-radius: 50%; 
+        border-bottom-left-radius: 50%; width: 35vmin;height: 35vmin;
+        top: 10vmin;left: 10vmin;}
+    60%{border-top-left-radius: 50%;border-top-right-radius: 50%; 
+        border-bottom-left-radius: 50%; width: 35vmin;height: 35vmin;
+        top: 10vmin;left: 10vmin;}
+    100%{border-radius: 0;}
+}
+
+@keyframes animation2 {
+    0%{border-radius: 0;}
+    10%{border-top-left-radius: 50%;border-top-right-radius: 50%; 
+        border-bottom-right-radius: 50%; width: 35vmin;height: 35vmin;
+        top: 10vmin;right: 10vmin;}
+    60%{border-top-left-radius: 50%;border-top-right-radius: 50%; 
+        border-bottom-right-radius: 50%; width: 35vmin;height: 35vmin;
+        top: 10vmin;right: 10vmin;}
+    100%{border-radius: 0;}
+}
+
+@keyframes animation3 {
+    0%{border-radius: 0;}
+    10%{border-top-left-radius: 50%;border-bottom-right-radius: 50%; 
+        border-bottom-left-radius: 50%; width: 35vmin;height: 35vmin;
+        bottom: 10vmin;left: 10vmin;}
+    60%{border-top-left-radius: 50%;border-bottom-right-radius: 50%; 
+        border-bottom-left-radius: 50%; width: 35vmin;height: 35vmin;
+        bottom: 10vmin;left: 10vmin;}
+    100%{border-radius: 0;}
+}
+
+@keyframes animation4 {
+    0%{border-radius: 0;}
+    10%{border-bottom-left-radius: 50%;border-top-right-radius: 50%; 
+        border-bottom-right-radius: 50%; width: 35vmin;height: 35vmin;
+        bottom: 10vmin;right: 10vmin;}
+    60%{border-bottom-left-radius: 50%;border-top-right-radius: 50%; 
+        border-bottom-right-radius: 50%; width: 35vmin;height: 35vmin;
+        bottom: 10vmin;right: 10vmin;}
+    100%{border-radius: 0;}
+}
+
+@keyframes animation5 {
+    0%{transform: rotate(0);}
+    10%{transform: rotate(0);}
+    80%{transform: rotate(720deg);}
+    100%{transform: rotate(720deg);}
+}
